@@ -1,0 +1,141 @@
+body {
+      background-color: hsl(204, 43%, 93%);
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Karla', sans-serif;
+      min-height: 100vh;
+
+
+}
+
+/***justify-content defines the alignment along the main/horizontal axis but align-items
+aligns items along the cross/vertical axis****/
+
+/*****Viewport Height (vh). This unit is based on the height of the viewport.
+A value of 1vh is equal to 1% of the viewport height.*****/
+
+
+*{
+  box-sizing: border-box;}
+
+  /****The asterisk (*) is known as the CSS universal selectors.
+  It can be used to select any and all types of elements in an HTML page****/
+
+main {
+      background-color: white;
+      min-width: 800px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+}
+
+/**** overflow hidden will hide the formatting of the lower section that would
+normally overwrite the formatting of the main section/parent. This was needed
+because the section formatting was causing the bottom on the box not to have
+a border-radius, causing the edges to appear sharp instead of rounded***/
+
+section {
+         padding: 35px;
+}
+
+
+h2 {
+    color: #5DBBB9;
+    font-size: 40px;
+}
+
+p {
+    font-size: 18px;
+}
+
+button {
+        background-color: hsl(71, 73%, 54%);
+        font-family: 'Karla', sans-serif;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 10px;
+        padding: 25px 0;
+        width: 100%;
+
+}
+
+button:hover {
+              color: black;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    opacity: 0.7;
+
+
+}
+
+/**** by defaut ul has 40px of padding on the left*****/
+
+ul li {
+       line-height: 30px;
+
+        }
+
+span {
+      font-size: 50px;
+      float: left;
+      margin-right: 15px;
+}
+
+.top-info {
+            color: hsl(218, 22%, 67%);}
+
+
+.per-month {
+            margin-top: 35px;
+            opacity: 0.7;
+}
+
+.full-access {
+              text-align: center;
+              margin-top: -10px;
+              padding-bottom: 30px;
+              opacity: 0.9;
+              font-size: 20px
+}
+
+
+.cyan {
+      background-color: hsl(179, 62%, 43%);
+      color: white;
+}
+
+.greyish-blue {
+              background-color: hsl(179, 47%, 52%);
+              color: white;
+}
+
+.row {
+      display: flex;
+}
+
+/******* When the display flex is used, the parent becomes a flex container and
+the children become flex items.  The result of this is that your items will all
+line up in a row,using the size of the content as their size in the main axis.***/
+
+.row > section {
+                flex: 1;
+}
+
+/***this notation basically targets all direct children of the .row class; When
+this type of flex notation is used, it is actually referring to flex-grow, flex-shrink
+and flex-basis have assumed values of 1 and 0, respectively. This indicates how
+much of the remaining space in the flex container should be assigned to the flex
+item(s). ***/
+
+.yellow-text {
+              color: hsl(71, 73%, 54%);
+}
